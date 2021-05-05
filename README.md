@@ -265,7 +265,7 @@ Amazon Simple Notification Service will be used for any pipeline failures, succe
 
 
 ## Author :  
-<b>[Akash M Dubey](https://www.linkedin.com/in/akashmdubey/)</b> 
+<b>[Sagar Shah](https://www.linkedin.com/in/shahsagar95/)</b> 
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
