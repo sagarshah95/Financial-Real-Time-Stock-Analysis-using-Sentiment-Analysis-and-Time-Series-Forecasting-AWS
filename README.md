@@ -177,7 +177,7 @@ You need to retrieve AWS credentials that allow your AWS CLI to access AWS resou
 3. Change the Keys in the app.py file
 
 #### Steps to get the Data
-1. git clone the repo https://github.com/akashmdubey/AWS-Architecture-Financial-News-Stock-Analysis-Forecasting-Sentimental-Text-Summarization
+1. git clone the repo https://github.com/sagarshah95/AWS-Architecture-Financial-News-Stock-Analysis-Forecasting-Sentimental-Text-Summarization
 2. In "Data" folder we have file to run the api and the Scrapper function. This is also scheduled with AWS Lambda in AWS console to run daily and can be modified as per the need.
 3. This will get us the data in S3 bucket.
 4. Now, We will have a Data in S3 bucket. Now use the AWS glue scripts to build Glue jobs to extract data from S3 buckets, transform it and load it into the Redshift Data Warehouse.
@@ -213,7 +213,7 @@ If everything is successful it shows an Open App button. We can now open the app
 
 
 #### Docker setup for app:
-1. git clone the repo https://github.com/akashmdubey/AWS-Architecture-Financial-News-Stock-Analysis-Forecasting-Sentimental-Text-Summarization
+1. git clone the repo https://github.com/sagarshah95/AWS-Architecture-Financial-News-Stock-Analysis-Forecasting-Sentimental-Text-Summarization
 2. docker build -t stock_app:1.0 . -- this references the Dockerfile at . (current directory) to build our Docker image & tags the docker image with stock_app:1.0
 3. Run docker images & find the image id of the newly built Docker image, OR run docker images | grep stock_app:1.0 | awk '{print $3}'
 4. docker run -it --rm -p 5000:5000 {image_id} stock_app:1.0 -- this refers to the image we built to run a Docker container.
